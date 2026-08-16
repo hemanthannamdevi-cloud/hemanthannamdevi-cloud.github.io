@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth Sri Kiran | ECE Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(circle at top right, #172554 0, transparent 35%),
+                #0b1120;
+        }
+
+        .hero {
+            padding: 70px 0;
+        }
+
+        .tag {
+            color: #60a5fa;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 72px);
+            line-height: 1.05;
+            margin-bottom: 18px;
+            color: #ffffff;
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 3vw, 30px);
+            font-weight: normal;
+            color: #94a3b8;
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #cbd5e1;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 11px 20px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .btn.primary {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        .section-title span {
+            color: #60a5fa;
+        }
+
+        .about {
+            max-width: 800px;
+            color: #cbd5e1;
+            font-size: 16px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            padding: 25px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #3b82f6;
+        }
+
+        .card h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card .tech {
+            color: #60a5fa;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #111827;
+            border: 1px solid #334155;
+            padding: 9px 15px;
+            border-radius: 20px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .timeline {
+            border-left: 2px solid #2563eb;
+            padding-left: 25px;
+        }
+
+        .timeline h3 {
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .timeline .date {
+            color: #60a5fa;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .timeline p {
+            color: #94a3b8;
+        }
+
+        .contact-box {
+            background: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .contact-box p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        .contact-box a {
+            color: #60a5fa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container hero">
+        <div class="tag">ELECTRONICS & COMMUNICATION ENGINEERING</div>
+
+        <h1>Hemanth Sri Kiran</h1>
+
+        <h2>ECE Student | VLSI • Embedded Systems • Industrial Automation</h2>
+
+        <p>
+            Electronics and Communication Engineering student at Lovely Professional University,
+            interested in VLSI, digital electronics, embedded systems, and industrial automation.
+            I enjoy building practical hardware and automation projects using microcontrollers,
+            sensors, and PLC-based control systems.
+        </p>
+
+        <div class="buttons">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="https://www.linkedin.com/in/hemanth-annamdevi/" target="_blank">
+                LinkedIn
+            </a>
+            <a class="btn" href="mailto:hemanthannamdevi@gmail.com">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title"><span>01.</span> About Me</h2>
+
+        <p class="about">
+            I am currently pursuing a B.Tech in Electronics and Communication Engineering
+            at Lovely Professional University. My current areas of interest include VLSI,
+            digital electronics, embedded systems, and industrial automation. I have worked
+            on projects involving Arduino, 8051 microcontrollers, ultrasonic sensors,
+            Bluetooth communication, and PLC-based automation.
+        </p>
+    </div>
+</section>
+
+<section id="internship">
+    <div class="container">
+        <h2 class="section-title"><span>02.</span> Internship</h2>
+
+        <div class="timeline">
+            <h3>Industrial Automation Intern | PLC-Based Automation</h3>
+
+            <div class="date">
+                Lovely Professional University | June 2026 – July 2026
+            </div>
+
+            <p>
+                Gained practical exposure to PLC-based industrial automation, control logic,
+                and automation workflows. Developed a PLC-based Automatic Food Packaging System
+                as an internship project and designed control logic for sequential packaging
+                operations through software-based PLC simulation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title"><span>03.</span> Projects</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Pothole Detection System</h3>
+                <div class="tech">Arduino • Ultrasonic Sensor</div>
+                <p>
+                    Developed a prototype pothole detection system using Arduino and an
+                    ultrasonic sensor to identify road surface irregularities. Future
+                    development is planned using ESP32 for enhanced capabilities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Home Automation System</h3>
+                <div class="tech">8051 • Arduino • Mobile Control</div>
+                <p>
+                    Developed a home automation system that enables mobile-based control
+                    of household appliances such as lights, fans, TV, and AC through
+                    wireless control.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Bluetooth RC Car</h3>
+                <div class="tech">Arduino • HC-05 Bluetooth</div>
+                <p>
+                    Built a Bluetooth-controlled RC car using Arduino and an HC-05 module.
+                    Implemented wireless vehicle control through commands received from
+                    a mobile device.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Automatic Food Packaging System</h3>
+                <div class="tech">PLC • Industrial Automation</div>
+                <p>
+                    Designed a software-based PLC automation project for sequential food
+                    packaging operations involving product detection, filling, packaging,
+                    and conveyor control.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title"><span>04.</span> Technical Skills</h2>
+
+        <div class="skills">
+            <div class="skill">C</div>
+            <div class="skill">C++</div>
+            <div class="skill">Verilog</div>
+            <div class="skill">Digital Electronics</div>
+            <div class="skill">VLSI Fundamentals</div>
+            <div class="skill">8051</div>
+            <div class="skill">Arduino</div>
+            <div class="skill">PLC Fundamentals</div>
+            <div class="skill">Ultrasonic Sensors</div>
+            <div class="skill">HC-05 Bluetooth</div>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2 class="section-title"><span>05.</span> Education</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>B.Tech – Electronics & Communication Engineering</h3>
+                <div class="tech">Lovely Professional University, Punjab</div>
+                <p>Currently Pursuing</p>
+            </div>
+
+            <div class="card">
+                <h3>Diploma – Electronics & Communication Engineering</h3>
+                <div class="tech">Aditya College of Engineering and Technology, Andhra Pradesh</div>
+                <p>Percentage: 80.98%</p>
+            </div>
+
+            <div class="card">
+                <h3>SSC</h3>
+                <div class="tech">Aditya Public School, Andhra Pradesh</div>
+                <p>Percentage: 89%</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="certification">
+    <div class="container">
+        <h2 class="section-title"><span>06.</span> Certification & Achievement</h2>
+
+        <div class="card">
+            <h3>LPU Hackathon 2.0</h3>
+            <div class="tech">
+                School of Electrical and Electronics Engineering,
+                Lovely Professional University
+            </div>
+            <p>Participant</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title"><span>07.</span> Contact</h2>
+
+        <div class="contact-box">
+            <p><strong>Email:</strong>
+                <a href="mailto:hemanthannamdevi@gmail.com">
+                    hemanthannamdevi@gmail.com
+                </a>
+            </p>
+
+            <p><strong>Phone:</strong> 9959208075</p>
+
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/hemanth-annamdevi/" target="_blank">
+                    linkedin.com/in/hemanth-annamdevi
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Hemanth Sri Kiran. Built with HTML & CSS.
+</footer>
+
+</body>
+</html>
